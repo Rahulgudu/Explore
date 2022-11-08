@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 11th code here, making the navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>HOME</li> <!-- 16th code goes, here adding the class name to the HOME -->
+            <li><a href="#"></a>TOURS</li>
+            <li><a href="#"></a>EXPLORE</li>
+            <li><a href="#"></a>ABOUT</li>
+            <li class="ctn"><a href="#"></a>CONTACT</li>
+        </ul>
+        <!-- 19th code goes here, adding the menu button for mobile view -->
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <!-- 1st code goes here making the header -->
+    <header>
+        <div class="header-content">
+            <h2>
+                Explore The Colorful World
+            </h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <!-- 3rd cod egoes here, creating the button -->
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    
+    <!-- 28th code goes here, adding the section tag where events will be there -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+
+        <!-- 31st code goes here, adding the images and text to the upcoming events -->
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" alt="">
+                <h4>
+                    Everest Camp Trek
+                </h4>
+                <p>The Everest Base Camp trek on the south side, at an elevation of 5,364 m (17,598 ft), is one of the most popular trekking routes in the Himalayas</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <!-- Coping the col division -->
+            <div class="col">
+                <img src="./img/img2.png" alt="">
+                <h4>
+                    Walking Holidays
+                </h4>
+                <p>The Himalayas are iconic when it comes to India walking holidays. But there is also heavenly hiking to be had in the Western Ghats in Kerala and Tamil Nadu.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+
+            
+        </div>
+    </section>
+    <!-- 35th code goes here, adding the explore section in the website -->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>
+                New experiences bring us new knowledge. Exploring our world, or exploring beyond our world creates jobs and technology that make our world better. We might look for new ideas such as new sources of energy to make life better for ourselves and future generations.
+            </p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- 38th code goes here, adding the last content of the website or the footer -->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS AND DESTINATION</h1>
+                <div class="line"></div>
+                <p>
+                    Hope you enjoy travelling with us. Follow us for more. Here is some of the suggestion you might need for your further planning.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 40th code goes here, i.e, adding the footer -->
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 1060, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright &copy; 2022 Outdoor Adventure</p>
+    </section>
+
+    <!-- 23rd code goes here, adding the javascript to make the menu-button work -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
